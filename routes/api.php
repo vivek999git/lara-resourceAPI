@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::apiResource('products',ProductController::class);
-//https://chatgpt.com/c/680a22ef-75a4-8005-8d12-ef745b71d8d6
+ 
