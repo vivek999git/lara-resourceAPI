@@ -23,6 +23,16 @@ Creating RESTful APIs in Laravel with PHP is a core feature of Laravel, and it's
 
  'destroy function' ,'DELETE Method'  api/products/{id}
  
+-To add the resource file for Product. Run folloing command. 
+
+php artisan make:resource ProductResource
+In app\Http\Resources\ProductResource.php
+return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'price' => $this->price,
+            'created_at' => $this->created_at->diffForHumans(),
+        ];
 
 ## Laravel Sponsors
 
